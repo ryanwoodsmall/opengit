@@ -28,7 +28,7 @@
 #ifndef __PROTOCOL_H
 #define __PROTOCOL_H
 
-#include <sys/queue.h>
+#include <bsd/sys/queue.h>
 
 /* Specifies the pack protocol capabilities */
 #define PACKPROTO_MULTI_ACK				BIT(0)

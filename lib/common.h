@@ -44,7 +44,7 @@
 #define SHA1_Init(x)	SHA1Init(x)
 #define SHA1_Update(x, y, z) SHA1Update(x, y, z)
 #else
-#error "Unsure what to do for inclusion of sha1 bits in this environment"
+#include <sha.h>
 #endif
 
 /* From Documentation/technical/pack-format.txt */

@@ -78,7 +78,7 @@ zlib_update_crc_sha(unsigned char *data, int use, void *darg)
 
 
 unsigned char *
-write_cb(unsigned char *buf, int size, int __unused deflate_bytes, void *arg)
+write_cb(unsigned char *buf, int size, int __attribute__((unused)) deflate_bytes, void *arg)
 {
 	struct writer_args *writer_args = arg;
 

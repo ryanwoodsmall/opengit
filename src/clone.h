@@ -29,7 +29,7 @@
 #ifndef __CLONE_H__
 #define __CLONE_H__
 
-#include <sys/queue.h>
+#include <bsd/sys/queue.h>
 #include "lib/common.h"
 #include "lib/protocol.h"
 

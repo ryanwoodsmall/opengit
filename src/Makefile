@@ -7,8 +7,8 @@ CFLAGS+=	-DNDEBUG -g -Wall -Wunreachable-code -Werror -O0
 .endif
 CFLAGS+=	-Wall -I${.CURDIR}/..
 # Currently statically linking against libogit.a library
-LDADD+=		${.OBJDIR}/../lib/libogit.a
 LDFLAGS+=	-lmd -lz -lfetch
+LDADD+=		${.OBJDIR}/../lib/libogit.a $(LDFLAGS)
 
 PROG=		ogit
 

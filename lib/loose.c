@@ -110,7 +110,7 @@ loose_get_headers(unsigned char *buf, int size, void *arg)
  * Handler for loose_content_handler
  */
 unsigned char *
-get_type_loose_cb(unsigned char *buf, int size, int __unused deflated_bytes, void *arg)
+get_type_loose_cb(unsigned char *buf, int size, int __attribute__((unused)) deflated_bytes, void *arg)
 {
 	uint8_t *type = arg;
 	struct loosearg loosearg;

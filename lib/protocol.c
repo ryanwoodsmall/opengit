@@ -25,7 +25,7 @@
  * SUCH DAMAGE.
  */
 
-#include <sys/queue.h>
+#include <bsd/sys/queue.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

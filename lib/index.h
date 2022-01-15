@@ -61,7 +61,7 @@ struct dircentry {
 	uint16_t		flags;
 #define DIRCENTRYSIZE		70
 	char			name[1];
-} __packed;
+} __attribute__((packed)) ;
 
 #define DIRC_EXT_FLAG		BIT(14)
 
@@ -81,7 +81,7 @@ struct dircextentry {
 	uint16_t		flags2;
 #define DIRCEXTENTRYSIZE	72
 	char			name[1];
-} __packed;
+} __attribute__((packed));
 
 struct dircleaf {
 	bool			 isextended;
